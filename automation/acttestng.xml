@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="actitime">
+  <parameter name="username" value="admin"></parameter>
+  <parameter name="password" value="manager"></parameter>
+ <parameter name="browser" value="chrome"></parameter>
+  
+  <classes>
+   <class name="dataParameterization.Actitime"/>
+   </classes>
+  </test> <!-- Test -->
+  
+  
+  
+  <test thread-count="5" name="actitimefire">
+  <parameter name="username" value="admin"></parameter>
+  <parameter name="password" value="manager"></parameter>
+ <parameter name="browser" value="firefox"></parameter>
+  
+  <classes>
+   <class name="dataParameterization.Actitime"/>
+   </classes>
+  </test> <!-- Test -->
+  
+  
+  
+  
+</suite> <!-- Suite -->
